@@ -54,10 +54,6 @@ However, each workflow can have one or more `jobs`, these are a series of tasks 
 
 YAML Ain't Markup Language
 
-> > Author Notes: Lets' talk a bit about what Actions are and what they're for.
-
-# Customizing
-
-If you're not familiar with YML files. YAML is a recursive acronym, so it stands for YAML Ain't Markup Language. It used to be called Yet Another Markup Language, but since it wasn't meant to create markup like HTML, the name got changed to the Weirder version.
+> > Author Notes: YAML is a recursive acronym, so it stands for YAML Ain't Markup Language. It used to be called Yet Another Markup Language, but since it wasn't meant to create markup like HTML, the name got changed to the Weirder version.
 
 YAML is meant to be converted to data, so they're like JSON files in that it will easily convert to JavaScript objects, but where whitespace is used instead of punctuation. It's also meant to be human readable. I think it's easy to read, but a little bit harder to define.
