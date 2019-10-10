@@ -2,21 +2,21 @@
 
 # Github Actions
 
-> > Author Notes: Lets' talk a bit about what [Actions](https://github.com/features/actions) are and what they're for.
+> > Author Notes: Programmers use a number of tools that help them take care of common tasks. But over time this has caused something called Developer fatigue, because the number and variety of tools change all the time. Hey there, I'm Ray Villalobos and in this course I want to show you a solution that could help offload some of the tooling to Github. It's called Github Actions. Let's take a look at how they work.
 
 ---
 
-## Github Actions
+## What are Actions?
 
-- Automating workflows
+- Workflows
 - CI/CD
-- Whole process
+- Control Github
 
-> > Author Notes: Github [Actions](https://github.com/features/actions) are a way for developers to organize and automate how they do their job.
+> > Author Notes: You create [Actions](https://github.com/features/actions) in your repositories by creating one or more text files in your repository, these are called workflows.
 
-- It makes it easier to handle common tasks like Continuous Delivery and Continuous Delivery right from Github. So, for example, you can use an action that sends pushes your site to your hosting platform when you push a change to the master branch.
+- Workflows can handle common build tasks like Continuous Delivery and Continuous Integration. So, you can use an action that compresses images, tests your developers code, then pushes your site to your hosting platform when the master branch changes.
 
-- But it's more powerful than that, you can control how your code is built, tested and deployed by adding a series of jobs and workfows to your projects. A good example here, is that you can configure an action so that it automaticaly compresses images when you issue a pull request, getting your site ready to deploy, but still allowing you to preview what you've done before merging to master.
+- You can also have tasks that run on a specific timeframe, or that control what happens when someone interacts with the Github repository...like when someone makes a comment on a pull request, or stars your project.
 
 ---
 
@@ -26,11 +26,11 @@
 - Matrix builds
 - Any language
 
-> > Author Notes: Another nice feature of actions is that they can run using many platforms...including Linux, MacOS or Windows and you can run these on Virtual machines or containers. That means you can really test your code in different environments.
+> > Author Notes: Actions can also run actions on Linux, MacOS or Windows and these will run on Virtual machines or containers so you can test your code in different environments.
 
-- You can even run matrix workflows that run on multiple platforms at the same time, saving your a lot of time in the automation process.
+- You can even run matrix workflows on multiple platforms simultaneously.
 
-- You can use Actions on just about any language, so it's not limited to just websites but can also run applications using: Node.js, Python, Ruby, PHP and lots more.
+- Actions can run on any language including: Node.js, Rust, Python, PHP and lots more.
 
 ---
 
@@ -42,8 +42,8 @@
 
 > > Author Notes:
 
-- Every action creates a series of detailed logs that can be used to trouble shoot deploys in real-time, while your actions run.
+- Every action creates detailed logs that can be used to trouble shoot deploys in real-time...while your actions run.
 
-- Actions also provide a way to store secrets within the repository for additional safety and ease of use accross team members
+- Github will also store secrets within the repository for additional safety and ease of use accross team members.
 
-- Actions already has a strong community of developers with tons of pre-built actions and workflows that allow you to connect and work with popular tools like Heroku, AWS, Azure, Now and many others
+- Actions already has a strong community of developers with hundreds of pre-built actions, examples and workflows, so you don't have to start from scratch.
