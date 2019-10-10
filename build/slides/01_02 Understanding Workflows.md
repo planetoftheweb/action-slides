@@ -2,7 +2,7 @@
 
 # Workflows
 
-> > Author Notes: Actions are built by creating one or more workflow files, so let's explore who they are created.
+> > Author Notes: Actions are built by creating one or more workflow files, so let's explore how they are created and we'll use one of the existing templates to build one.
 
 ---
 
