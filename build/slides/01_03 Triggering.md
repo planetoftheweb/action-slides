@@ -1,19 +1,19 @@
 <!-- .slide: data-state="title" -->
 
-# Triggering Actions
+# Workflow Events
 
-> > Author Notes: Let's take a deeper look at how actions are triggered and their relationship to jobs.
+> > Author Notes: Now that you've used a sample workflow, let's dive a little bit deeper into some of the options for triggering them.
 
 ---
 
-## Events
+## Event Types
 
-- Workflow
+- Workflows
 - Webhooks
 - Scheduled
 - External
 
-> > Author Notes: Events can be targeted by a specific [activity](https://help.github.com/en/articles/events-that-trigger-workflows) on Github,
+> > Author Notes: Events can be targeted by a specific [activity](https://help.github.com/en/articles/events-that-trigger-workflows).
 
 - The most common of these is workflow events, so something like a push, pull_request or fork that refers to changes in the repository
 
