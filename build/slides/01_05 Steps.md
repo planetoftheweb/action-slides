@@ -22,7 +22,7 @@ A workflow can have one or more jobs, each job is identified by an ID label, whi
 
 - Parallel by default
 - `needs:` id or array
-- `runs-on:` OS
+- `runs-on:`
 
 > > Author Notes:
 
@@ -44,9 +44,9 @@ macOS-latest or macOS-10.14
 
 # Job Options
 
-- `env:` variables
-- `if:` conditional
-- `steps:` list
+- `env:`
+- `if:`
+- `steps:`
 
 > > Author Notes:
 
@@ -55,41 +55,3 @@ You can pass along a number of environment variables that will be available to e
 You can also run a job only if it meets certain conditions.
 
 Steps are the sequence of tasks you want your jobs to perform.
-
----
-
-```
-name: Hello Actions
-
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    types: [closed]
-
-env:
-  name: Raybo
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-    env:
-      name: Ray V.
-
-    steps:
-    - name: Say Hi
-      run: echo Hi, $name!
-
-  pull_requests_only:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
-    needs: build
-
-    steps:
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo Hi, $name!
-```
