@@ -5,7 +5,6 @@
   "scripts": {
     "start": "gulp",
     "bootstrap-light": "node-sass ./src/bootstrap-light/scss/bootstrap.scss ./build/css/bootstrap-light.css",
-    "now": "now ./build -A ../now.json && now alias"
   },
   "main": "gulpfile.js",
   "license": "MIT",
