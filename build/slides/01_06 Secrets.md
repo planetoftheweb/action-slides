@@ -16,9 +16,11 @@
 
 To create a secret, you'll need to go to your project settings and then choose secrets from the navigation.
 
-You can create as many secrets as you want here, but keep in mind that once you add a secret you won't be able to see it again.
+You can store up to 100 secrets in your repositories and they must each have a unique name. Keep in mind that once you add a secret you won't be able to see it again.
 
-Also, although you can use the variable in your actions, for security reasons you won't be able to print out the value of the secret in your actions, so be careful if you need to remember this secret.
+Also, although you can use the variable in your actions, for security reasons you won't be able to easily output the value of the secrets in your actions, so be careful if you need to remember this secret.
+
+https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables
 
 https://darksky.net/dev
 
